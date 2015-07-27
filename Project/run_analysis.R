@@ -7,6 +7,7 @@ y_train <- read.table("train/Y_train.txt")
 x_test <- read.table("test/X_test.txt")
 y_test <- read.table("test/Y_test.txt")
 features <- read.table("features.txt")
+labels <- read.table("activity_labels.txt")
 
 ##Rename columns with the signal names specified in features
 colnames(x_test) <- features[,2]
